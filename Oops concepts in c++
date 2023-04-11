@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+class hero{
+    public:
+    int health;
+    char name[20];
+    //private:
+    int level; 
+    hero(int h){              //coppy construcotr
+        cout<<" simple construcotr called"<<endl;
+}
+    int sethealth(int h){
+        return h;
+    }
+};
+  int main(){
+    hero suresh(70);
+    hero ritesh(suresh);   //r.health=suresh.heelth
+    // cout<<"the health of suresh is"<<health(67)<<endl;
+    suresh.sethealth(67);
+    cout<<"the helth of suresth"<<suresh.sethealth(7)<<endl;
+return 0;
+  }  
+
